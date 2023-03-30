@@ -4,7 +4,7 @@ import java.net.URL;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public static void main(String[] args) throws Exception {
         // CONEXAO HTTP E BUSCAR OS TOP 250 FILMES
         String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/TopMovies.json";
         ExtratorDeConteudoDoIMDB extrator = new ExtratorDeConteudoDoIMDB();
@@ -17,7 +17,7 @@ public class Main {
 
         // EXIBIR E MANIPULAR OS DADOS
 
-        List<Conteudo> conteudos = extrator.extraiConteudos(json);
+        List<Conteudo> conteudos = extrator.extraiConteudo(json);
 
 
         GeradoraDeFigurinhas geradora = new GeradoraDeFigurinhas();

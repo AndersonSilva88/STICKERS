@@ -1,13 +1,15 @@
-import javax.imageio.ImageIO;
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.IOException;
 import java.io.InputStream;
+
+import javax.imageio.ImageIO;
 
 public class GeradoraDeFigurinhas {
 
-    void cria(InputStream inputStream, String nomeArquivo) throws IOException {
+   public void cria(InputStream inputStream, String nomeArquivo) throws Exception {
 
         // leitura da imagem
         // InputStream inputStream = new FileInputStream(new File("img/filme.jpg"));
